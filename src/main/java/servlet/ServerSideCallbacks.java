@@ -116,7 +116,7 @@ public class ServerSideCallbacks extends HttpServlet{
                 "<meta name=\"salesforce-server-starturl\" content='" + startURL +"'>\n" +
                 "<meta name=\"salesforce-target\" content= \"#salesforce-login\">\n"+
                 "<meta name=\"salesforce-logout-on-browser-close\" content=\"false\">\n" +
-                "<meta name=\"salesforce-allowed-domains\" content=\"" + System.getenv("SALESFORCE_HEROKUAPP_URL") + "\">\n" +
+                "<meta name=\"salesforce-allowed-domains\" content=\"" + System.getenv("SALESFORCE_HEROKUAPP_URL") + ";embedded-sso-test.herokuapp.com\">\n" +
                 "<script src=\""+ communityUrl +"/servlet/servlet.loginwidgetcontroller?type=javascript_widget\"" +
                 " async defer></script>\n" +
                 "</head><body></body></html>";
